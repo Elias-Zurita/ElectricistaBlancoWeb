@@ -1,0 +1,115 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth; /* Permite desplazarme a la seccion que hago clic */
+}
+header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+}
+.offcanvas a{
+  color: white;
+}
+.bg-dark {        /* contorno del header */
+  background-color: black !important; 
+}
+.container-fluid{         /* fondo del header */
+  background-color: #000000; 
+}
+.navbar-toggler {
+  color: white;
+}
+a {
+  text-decoration: none; /* quita subrayado a hipervinculos */
+}
+.LogoHeader{
+  width: 20%;
+  padding-left: 2%;
+}
+.LogoHeader img{
+  width: 20%;
+  height: auto;
+}
+.SeccionesHeader{
+  margin-left: auto; 
+  margin-right: auto;
+  display: flex;
+  list-style:none; /* quita punto de lista*/
+  width: 75%;
+  justify-content: space-around;
+  font-size: large;
+}
+.SeccionesHeader a{
+  color: white;
+  font-weight: bold;
+}
+.SeccionesHeader a:hover{
+  color: rgb(235, 117, 14);
+  transition: 0.5s;
+}
+.navbar-toggler{
+  display: none; /* Oculta el burguer menu */
+}
+.fa-whatsapp{ /* icono whats app */
+  color: #00c462;
+}
+.fa-phone{
+  color: black;
+}
+.fa-envelope{
+  color: white;
+}
+.active{
+  font-weight: bold;
+}
+.fa-instagram{
+  color: rgb(252, 101, 126);
+}
+.fa-facebook{
+  color: #2d5f9a;
+}
+.fa-linkedin{
+  color: #005182;
+}
+.fa-location-dot{
+  color: rgba(255, 0, 0, 0.773);
+}
+.offcanvas-body{
+  color: white;
+}
+.nav-item a{
+  color: white;
+}
+.nav-item a:hover{
+  color: rgb(235, 117, 14);
+}
+.developerHeader a{
+  font-weight: bold;
+  color: rgb(18, 224, 187);
+  cursor: pointer;
+}
+/* Tablets */
+@media (max-width:800px){ 
+  .navbar-toggler{ 
+      display: block;   /* Muestra el burguer menu */
+  }
+  .SeccionesHeader{
+    display: none;
+  }
+  .LogoHeader img{
+    width: 40%;
+    height: auto;
+  }
+}
+
+/* Celular */
+@media (max-width:480px){ 
+  .LogoHeader img{
+    width: 70%;
+    height: auto;
+  }
+}

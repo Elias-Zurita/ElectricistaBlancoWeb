@@ -1,0 +1,62 @@
+.sobremi{
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background: url(../img/fondo6.jpg);
+    color: white;
+}
+.cajaPresentacion{
+    display: flex;
+    align-items: center; /* alinea respecto al eje Y */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    justify-content: space-around;
+}
+.caja-fotoIgnacio{
+    width: 30%;
+}
+.caja-fotoIgnacio img{
+    width: 100%;
+    max-height: 500px;
+}
+.caja-presentacion{
+    width: 60%;
+    text-align: center;
+    padding: 2%;
+    font-size: large;
+}
+
+/* Deskopt */
+@media (max-width:1200px){ 
+    .cajaPresentacion{
+        width: 100%;
+    }
+    .caja-fotoIgnacio{
+       width: 40%;
+    }
+    .caja-fotoIgnacio img{
+        max-height: 800px;
+    }
+    .caja-presentacion{
+        width: 50%;
+    }
+}
+/* Tablets */
+@media (max-width:950px){ 
+    .cajaPresentacion{
+        flex-direction: column;
+    }
+    .caja-fotoIgnacio{
+        width: 80%;
+     }
+    .caja-presentacion{
+        width: 90%;
+    }
+}
+/* Celular */
+@media (max-width:480px){ 
+    .cajaPresentacion{
+        margin-top: 10%;
+    }
+}

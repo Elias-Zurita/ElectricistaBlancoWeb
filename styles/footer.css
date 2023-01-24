@@ -1,0 +1,166 @@
+.seccionServicio{
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
+    padding-top: 4% ;
+    padding-bottom: 4% ;
+}
+.cajasServicio{
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:space-between;
+}
+.miServicio{
+    font-size: xx-large;
+}
+.fullTime{
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.tarjetas{
+    font-size: x-large;
+    font-weight: bold;
+}
+.pagos img{
+    width: 30%;
+}
+.caja2Servicio{
+    display: flex;
+}
+.botonWa2{
+    background-color: rgba(37,211,102,1) !important; 
+    font-size: large;
+    font-weight: bold;
+    width: 190px;
+    height: 80px;
+    margin-right: 2%;
+    padding: 1%;
+    border: none;
+    border-radius: 15px;
+    margin-top: 20%;
+}
+.botonWa2 a{
+    color: white;
+}
+.botonWa2 i{
+    color: white;
+}
+.botonWa2:hover{
+    transform: scale(1.05);
+    transition: 0.9s;
+}
+.cajaBotonArriba{
+    text-align: center;
+    position: relative; /* se utiliza para poder usar position absolute en el boton */
+    width: 100%;
+}
+.arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(235, 117, 14);
+    color: #fff;
+    position: absolute; /* ubico el boton donde quiero dentro de su caja */
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.arriba:hover{
+    background-color: rgb(37, 57, 211) !important; 
+    color: black;
+    transition: 0.9s ease;
+}
+.developer{
+    background-color: black;
+    color: white;
+    padding: 0.5% 0 0.5% 2%;
+}
+.developer a{
+    font-weight: bold;
+    font-family: 'Righteous';
+    font-size: large;
+}
+.developer a:hover{
+    color: aqua;
+    transition: 0.9s ease;
+}
+
+/*--------------------------*/
+
+/* Deskopt */
+@media (max-width:1200px){ 
+    .pagos img{
+        width: 40%;
+    }
+    .developer{
+        padding: 3% 0 0.5% 2%;
+    }
+}
+/* Tablets */
+@media (max-width:800px){ 
+    .cajasServicio{
+        flex-direction: column;
+        width: 90%;
+    }
+    .caja1Servicio {
+        margin:5% 0 0 0;
+    }
+    .caja1Servicio div{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: xxx-large;
+        width: 80%;
+    }
+    .caja1Servicio .tarjetas{
+        font-size: x-large;
+    }
+    .pagos img{
+        width: 50%;
+    }
+    .caja2Servicio{
+        margin:5% 0 5% 0;
+    }
+    .caja2Servicio button{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .botonWa2{
+        font-size: xx-large;
+        width: 60%;
+        margin-top: 0%;
+        height: 90px;
+    }
+    .numero{
+        font-size: x-large;
+    }
+    .developer{
+        padding: 4% 10% 0.5% 2%;
+    }
+}
+  /* Celular */
+  @media (max-width:480px){ 
+    .seccionServicio{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .miServicio{
+        font-size: x-large;
+    }
+    .fullTime{
+        font-size: xx-large;
+    }
+    .pagos img{
+        width: 60%;
+    }
+    .botonWa2{
+        width: 80%;
+    }
+    .developer{
+        padding: 8% 10% 0.5% 2%;
+    }
+  }

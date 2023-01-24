@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth; /* Permite desplazarme a la seccion que hago clic */
+}
+.carousel-item{
+    height: 700px ;
+}
+.d-block{
+    height: 100%;
+    object-fit: cover; /* no achica la imagen, sino que la pasa por arriba */
+    filter: brightness(0.6); /* aplica sombra*/
+}
+.carousel-caption{
+    top: 25%; /* posiciona al medio de la imagen los textos */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start; /* alinea a la izquierda el texto */
+    padding-left: 15%; /* centra el texto */
+}
+.servicioCarousel{
+    color: white;
+    font-size: 30px;
+}
+.tituloCarousel{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.textosCarousel {
+    color: white;
+    font-size: 20px
+}
+.botonesCarousel{
+    margin-top: 2%;
+}
+.botonesCarousel a{
+    color: white;
+}
+.botonesCarousel button:hover{
+    transform: scale(1.05);
+    transition: 0.9s;;
+}
+.botonWa{
+    background-color: rgba(37,211,102,1) !important; 
+    color: white;;
+    font-size: large;
+    width: 130px;
+    margin-right: 2%;
+    padding: 1%;
+    border: none;
+    border-radius: 15px;
+}
+.botonWa a{
+    color: white;
+}
+.botonWa i{
+    color: white;
+}
+.botonLlamar{
+    background-color: rgba(40,116,252) !important; 
+    font-size: large;
+    width: 130px;
+    padding: 1%;
+    margin-right: 2%;
+    border: none;
+    border-radius: 15px;
+}
+.botonMail{
+    background-color: red !important; 
+    font-size: large;
+    width: 130px;
+    padding: 1%;
+    margin-right: 2%;
+    border: none;
+    border-radius: 15px;
+}
+.seccionExperiencia{
+    background: url(../img/fondo1.jpg);
+    background-size: cover;
+    padding-top: 7%;
+    padding-bottom: 7% ;
+}
+.cajaSeccionExp{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.servicios{
+    font-size: x-large;
+}
+.añosExp{
+    font-size: xx-large;
+}
+.atencion24{
+    font-size: xxx-large;
+    font-weight: bold;
+}
+table.tablaSeccion {
+    width: 100%;
+}
+table.tablaSeccion td{
+    width: 20%;
+    height: 100px;
+    padding-left: 3%;
+}
+.tablaSeccion{
+    font-size: 25px;
+    font-weight: 600;
+}
+.tablaSeccion i{
+    color: goldenrod;
+}
+.listaSeccion{
+    color: white;
+    list-style:none; /* quita punto de lista*/
+    font-size: 20px;
+    font-weight: 600;
+    display: none;
+}
+.listaSeccion i{
+    color: goldenrod;
+}
+.listaSeccion li{
+    margin-top: 10%;
+}
+.cajasGaleria{
+    color: white;
+    background: url(../img/fondo13.jpg);
+    background-size: cover;
+    padding-top: 7%;
+    padding-bottom: 7% ;
+}
+.seccionGaleria{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.conoce{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.galeria{
+    font-size: xxx-large;
+    font-weight: bold;
+}
+.cajaFotos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* apila las cajas si no entran en la resolucion (img debe estar en px) */
+}
+.cajaFotos img{
+    margin: 1%;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.cajaFotos iframe{
+    margin: 1%;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.cajaFotos iframe:hover{
+    transform: scale(1.05);
+    transition: 0.9s;
+}
+.cajaFotos img:hover{
+    transform: scale(1.05);
+    transition: 0.9s;;
+}
+.full-img{   /* estilos para la imagen que se abre full-screen */
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none; /* oculto la imagen agrandada */
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.full-img span{    /* posicion donde aparecera la X de cerrar la imagen */
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.full-img img{
+    width: 90%;
+    max-width: 600px;
+}
+/* Deskopt */
+@media (max-width:1200px){ 
+    .cajaSeccionExp{
+        width: 750px;
+    }
+    .seccionGaleria{
+        width: 750px;
+    }
+}
+/* Tablets */
+@media (max-width:800px){ 
+    .carousel-caption{
+        top: 9%; /* posiciona al medio de la imagen los textos */
+        padding-left: 10%; /* centra el texto */
+    }
+    .tituloCarousel{
+        font-size: 35px;
+    }
+    .textosCarousel {
+        font-size: 20px
+    }
+    .botonesCarousel{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4%;
+    }
+    .botonesCarousel button{
+        margin-top: 4%;
+        padding: 3%;
+        width: 44%;
+    }
+    .cajaSeccionExp{
+        width: 85%;
+        padding-left: 6%;
+        padding-bottom: 12%;
+    }
+    .tablaSeccion{
+        width: 80%;
+        display: none;
+    }
+    .listaSeccion{
+        display: block;
+    }
+    .seccionGaleria{
+        width: 85%
+    }
+    .cajaFotos img{
+        margin: 1%;
+        width: 250px;
+        height: 250px;
+    }
+}
+  /* Celular */
+  @media (max-width:480px){ 
+    .carousel-caption{
+        top: 7%; /* posiciona al medio de la imagen los textos */
+        padding-left: 0%; /* centra el texto */
+    }
+    .servicioCarousel{
+        font-size: 24px;
+    }
+    .tituloCarousel{
+        font-size: 28px;
+    }
+    .textosCarousel {
+        font-size: 18px;
+    }
+    .botonesCarousel button{
+        width: 130px;
+        margin-top: 8%;
+    } 
+    .listaSeccion li{
+        margin-top: 18%;
+    }
+    .seccionGaleria{
+        width: 90%;
+    }
+    .cajaFotos img{
+        margin: 3%;
+        width: 300px;
+        height: 300px;
+    }
+  }
