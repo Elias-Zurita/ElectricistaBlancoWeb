@@ -1,5 +1,5 @@
 <p align="center">
-   <a href="https://blancoelectricista.com"><img src="https://github.com/Elias-Zurita/BlancoElectricista/blob/master/public/img/icono.png"></a>
+   <a href="https://blancoelectricista.com"><img src="https://github.com/Elias-Zurita/ElectricistaBlancoWeb/blob/master/img/icono.png"></a>
 </p>
 
 # Blanco Electricista :bulb:
