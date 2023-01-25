@@ -13,6 +13,12 @@ Implementacion de formularios de contacto funcionales desde el sitio web y redes
 - Clonar el proyecto desde https://github.com/Elias-Zurita/BlancoElectricista.git
 - Abrir el archivo index.html desde el browser (Google Chrome, Mozilla Firefox o Microsoft Edge)
 
+## Lenguajes utilizados :zap:
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
 ## DEMO :globe_with_meridians:
 - Para ver la aplicacion sin necesidad de clonar el repositorio puede acceder al siguiente enlace: 
 
