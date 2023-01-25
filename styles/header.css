@@ -14,14 +14,23 @@ header{
 .offcanvas a{
   color: white;
 }
+.offcanvas h5{
+  font-family: 'Righteous';
+}
+.offcanvas h5:hover{
+  color: #D32F2F;
+}
 .bg-dark {        /* contorno del header */
-  background-color: black !important; 
+  background-color: violet
 }
 .container-fluid{         /* fondo del header */
-  background-color: #000000; 
+  background-color: #D32F2F
+}
+.navbar{
+  background-color: #D32F2F
 }
 .navbar-toggler {
-  color: white;
+  color: #D32F2F
 }
 a {
   text-decoration: none; /* quita subrayado a hipervinculos */
@@ -48,14 +57,15 @@ a {
   font-weight: bold;
 }
 .SeccionesHeader a:hover{
-  color: rgb(235, 117, 14);
+  color: black;
   transition: 0.5s;
 }
 .navbar-toggler{
   display: none; /* Oculta el burguer menu */
 }
 .fa-whatsapp{ /* icono whats app */
-  color: #00c462;
+  color: black;
+  font-weight: bold;
 }
 .fa-phone{
   color: black;
@@ -85,17 +95,22 @@ a {
   color: white;
 }
 .nav-item a:hover{
-  color: rgb(235, 117, 14);
+  color: #D32F2F
 }
 .developerHeader a{
   font-weight: bold;
   color: rgb(18, 224, 187);
   cursor: pointer;
 }
+.developerHeader a:hover{
+  color: #D32F2F
+}
+
 /* Tablets */
 @media (max-width:800px){ 
   .navbar-toggler{ 
       display: block;   /* Muestra el burguer menu */
+      border: none;
   }
   .SeccionesHeader{
     display: none;

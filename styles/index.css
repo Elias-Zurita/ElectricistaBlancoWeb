@@ -24,11 +24,13 @@ html{
 .servicioCarousel{
     color: white;
     font-size: 30px;
+    font-family: 'Righteous';
 }
 .tituloCarousel{
     color: white;
     font-size: 40px;
     font-weight: bold;
+    font-family: 'Righteous';
 }
 .textosCarousel {
     color: white;
@@ -79,10 +81,11 @@ html{
     border-radius: 15px;
 }
 .seccionExperiencia{
-    background: url(../img/fondo1.jpg);
+    background-color: black;
+    color: white;
     background-size: cover;
-    padding-top: 7%;
-    padding-bottom: 7% ;
+    padding-top: 3%;
+    padding-bottom: 3% ;
 }
 .cajaSeccionExp{
     margin-left: auto;
@@ -91,13 +94,16 @@ html{
 }
 .servicios{
     font-size: x-large;
+    font-family: 'Righteous';
 }
 .añosExp{
     font-size: xx-large;
+    font-family: 'Righteous';
 }
 .atencion24{
     font-size: xxx-large;
     font-weight: bold;
+    font-family: 'Righteous';
 }
 table.tablaSeccion {
     width: 100%;
@@ -129,10 +135,11 @@ table.tablaSeccion td{
 }
 .cajasGaleria{
     color: white;
-    background: url(../img/fondo13.jpg);
+    background-color: white;
+    color: black;
     background-size: cover;
-    padding-top: 7%;
-    padding-bottom: 7% ;
+    padding-top: 3%;
+    padding-bottom: 3% ;
 }
 .seccionGaleria{
     width: 60%;
@@ -146,6 +153,7 @@ table.tablaSeccion td{
 .galeria{
     font-size: xxx-large;
     font-weight: bold;
+    font-family: 'Righteous';
 }
 .cajaFotos{
     width: 100%;
@@ -192,8 +200,26 @@ table.tablaSeccion td{
     top: 12%;
     right: 10%;
     font-size: 30px;
-    color: #fff;
+    color: #D32F2F;
+    font-weight: bold;
     cursor: pointer;
+    animation-name: cruzAnimacion;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes cruzAnimacion{
+
+    0% {
+        transform: scale(0.75);
+    }
+
+    
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(0.75);
+    }
 }
 .full-img img{
     width: 90%;
