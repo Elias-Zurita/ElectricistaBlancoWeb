@@ -63,7 +63,7 @@ a {
 .navbar-toggler{
   display: none; /* Oculta el burguer menu */
 }
-.fa-whatsapp{ /* icono whats app */
+.fa-whatsapp i{ /* icono whats app */
   color: rgba(37,211,102,1) !important;
   font-weight: bold;
 }
