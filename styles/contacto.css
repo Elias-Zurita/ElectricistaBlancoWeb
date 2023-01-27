@@ -1,8 +1,8 @@
 /* SECCION CONTACTO */
 .contacto{
-    background-color: white;
+    background: url(../img/fondoSobremi.jpg);
     background-size: cover; /* expande imagen para que cubra todo el fondo */
-    color: black;
+    color: white;
     padding-top: 4%;
     padding-bottom: 2%;
 }

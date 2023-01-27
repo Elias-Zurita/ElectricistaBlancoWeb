@@ -24,13 +24,13 @@ header{
   background-color: violet
 }
 .container-fluid{         /* fondo del header */
-  background-color: #D32F2F
+  background-color: black
 }
 .navbar{
-  background-color: #D32F2F
+  background-color: black
 }
 .navbar-toggler {
-  color: #D32F2F
+  color:black
 }
 a {
   text-decoration: none; /* quita subrayado a hipervinculos */
@@ -57,18 +57,18 @@ a {
   font-weight: bold;
 }
 .SeccionesHeader a:hover{
-  color: black;
+  color: orangered;
   transition: 0.5s;
 }
 .navbar-toggler{
   display: none; /* Oculta el burguer menu */
 }
 .fa-whatsapp{ /* icono whats app */
-  color: black;
+  color: rgba(37,211,102,1) !important;
   font-weight: bold;
 }
 .fa-phone{
-  color: black;
+  color: red;
 }
 .fa-envelope{
   color: white;
